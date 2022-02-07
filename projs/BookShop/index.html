@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Shop</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="init()">
+    <h1>Welcome to my bookshop</h1>
+
+    <section class="book-adding-section">
+        <button class="add-book-btn" onclick="onAddBookClick()">Add a book</button>
+        <section class="book-adding hide">
+            <input name="book-name" type="text" placeholder="What is the book name?">
+            <input name="book-price" type="text" placeholder="What is the book price?">
+            <button onclick="onAddBook()">Add</button>
+        </section>
+    </section>
+
+    <table class="main-table">
+        <thead>
+            <th>ID</th>
+            <th class="sort-toggle" title="Sort list by title" onclick="onSortList('title')">Title</th>
+            <th class="sort-toggle" title="Sort list by price" onclick="onSortList('price')">Price</th>
+            <th>Actions</th>
+            <th>Rating</th>
+        </thead>
+        <tbody class="table-content"></tbody>
+    </table>
+    <div class="pages">
+        <button class="prev-page" onclick="onSetPage('prev')">&#8592;</button>
+        <div class="page-numbers"></div>
+        <button class="next-page" onclick="onSetPage('next')">&#8594;</button>
+    </div>
+
+    <div class="details-container hide">
+        <h3 class="book-name"></h3>
+        <div class="img"></div>
+        <div class="content"></div>
+
+
+        <div class="rate-close">
+            <h6>Your rating:</h6>
+            <div class="rating"><button>-</button><span class="rate">RATE</span><button>+</button></div>
+        </div>
+        <button class="close-modal" onclick="onCloseModal()">Close</button>
+    </div>
+
+
+
+
+    <script src="js/services/utils-sevice.js"></script>
+    <script src="js/services/storage-sevice.js"></script>
+    <script src="js/services/bookshop-sevice.js"></script>
+    <script src="js/bookshop-controller.js"></script>
+</body>
+
+</html>
