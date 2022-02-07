@@ -4,7 +4,7 @@
 function renderProjs() {
     const projs = getProjs()
     var strHTML = projs.map(proj => {
-        return `<div class="col-md-4 col-sm-6 portfolio-item">
+        return `<div class="col-md-3 col-sm-5 portfolio-item">
                     <a class="portfolio-link" onclick="renderModal('${proj.id}')" data-toggle="modal" href="#portfolioModal1">
                          <div class="portfolio-hover">
                              <div class="portfolio-hover-content">
@@ -35,4 +35,17 @@ function renderModal(id) {
     $('.proj-publish-date').text(new Date(575980581600000).toDateString())
     $('.open-project-btn').attr('href', `projs/${proj.name}/index.html`)
 
+}
+
+
+function onSendMail() {
+    // debugger
+    var userMail = $('.contact-user-mail').val()
+    var subject = $('.contact-subject').val()
+    var message = $('.contact-message').val()
+
+    console.log(userMail)
+    console.log(subject)
+    console.log(message)
+    sendMail(userMail, subject, message);
 }

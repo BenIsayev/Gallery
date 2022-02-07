@@ -29,11 +29,24 @@
     <div class="offcanvas-btn" onClick="openCanvas()">
         <i class="fa fa-comment" aria-hidden="true"></i>
     </div>
-    <aside class="offcanvas-aside">
+    <aside class="offcanvas-aside bg-warning">
 
         <!-- Contact -->
         <section id="contact">
             <h4>Contact Me</h4>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Your Email address</label>
+                <input type="email" class="contact-user-mail form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Subject</label>
+                <input type="email" class="contact-subject form-control" id="exampleFormControlInput1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Message Body</label>
+                <textarea class="contact-message form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button class="submit-mail-btn btn btn-dark">Submit</button>
         </section>
 
     </aside>
@@ -225,7 +238,7 @@
                                 <img class="proj-img img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
                                 <p class="proj-desc"></p>
                                 <!-- <button class="open-project-btn btn btn-primary">Take me to project!</button> -->
-                                <a class="open-project-btn" href="">GO TO PROJ</a>
+                                <a class="open-project-btn" href="">ENJOY THE PROJECT YOURSELF!</a>
                                 <ul class="list-inline">
                                     <li>Publish Date: <span class="proj-publish-date"></span></li>
                                     <li>Client: Threads</li>

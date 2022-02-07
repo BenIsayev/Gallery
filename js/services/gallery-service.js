@@ -13,7 +13,7 @@ var gProjs = [{
     {
         id: 'BookShop.png',
         name: 'BookShop',
-        title: 'Be organized with your books',
+        title: 'Organize your books',
         desc: 'Lorem ipsum Lorem ipsum Lorem ipsum',
         url: 'projs/book-shop',
         publishedAt: 575980322400000,
@@ -29,6 +29,12 @@ var gProjs = [{
         labels: ["BootStrap", "Object tree"]
     },
 ]
+
+
+
+function sendMail(userMail, subject, message) {
+    window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=benisayev@gmail.com&su=${subject}&body=${message},+sincerely,+${userMail}`)
+}
 
 
 
