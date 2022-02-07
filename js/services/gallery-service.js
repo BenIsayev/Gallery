@@ -5,8 +5,7 @@ var gProjs = [{
         id: 'MineSweeper.png',
         name: 'MineSweeper',
         title: 'Try to pass the mine area',
-        desc: 'Lorem ipsum Lorem ipsum Lorem ipsum',
-        url: 'projs/minesweeper',
+        desc: 'MineSweeper is a game which the goal is to click on all the boxes that have no mines underneath them, you make your way by calculating the mine locations with the number of neighbor mines, in this specific project you can choose your difficulty, have clues, and safe clicks, enjoy!',
         publishedAt: 575979717600000,
         labels: ["Matrixes", "contextmenu manipulation"]
     },
@@ -14,8 +13,7 @@ var gProjs = [{
         id: 'BookShop.png',
         name: 'BookShop',
         title: 'Organize your books',
-        desc: 'Lorem ipsum Lorem ipsum Lorem ipsum',
-        url: 'projs/book-shop',
+        desc: 'BookShop is actually a simple way to keep track of all the books you are selling, update pricing, update new books etc.',
         publishedAt: 575980322400000,
         labels: ["Tables", "Sorting"]
     },
@@ -23,10 +21,17 @@ var gProjs = [{
         id: 'GuessMe.png',
         name: 'GuessMe',
         title: 'I will read your mind',
-        desc: 'Lorem ipsum Lorem ipsum Lorem ipsum',
-        url: 'projs/guess-me',
+        desc: 'GuessMe is a game that tries to guess which personallity you are thinking of, at the start it will be a little difficult for him to know, but with your help he would be able to target better his questions and know who the person is.',
         publishedAt: 575980581600000,
         labels: ["BootStrap", "Object tree"]
+    },
+    {
+        id: 'TouchNums.png',
+        name: 'TouchNums',
+        title: 'Count your way to the top',
+        desc: 'TouchNums is a simple game that you need to start by pressing the number 1 and then start pressing every following number untill you win the game',
+        publishedAt: 1642802400000,
+        labels: ["2dArray", "Timer"]
     },
 ]
 

@@ -27,12 +27,11 @@ function renderProjs() {
 
 function renderModal(id) {
     var proj = getProjById(id)
-    console.log(proj.publishedAt)
     $('.proj-name').text(proj.name)
     $('.proj-title').text(proj.title)
     $('.proj-img').attr('src', `img/proj-img/${proj.id}`)
     $('.proj-desc').text(proj.desc)
-    $('.proj-publish-date').text(new Date(575980581600000).toDateString())
+    $('span.proj-publish-date').text(new Date(proj.publishedAt).toDateString())
     $('.open-project-btn').attr('href', `projs/${proj.name}/index.html`)
 
 }

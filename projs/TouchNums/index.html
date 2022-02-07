@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of numbers!</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="init()">
+    <div class="timer"></div>
+    <h1>Game Of Numbers!</h1>
+    <button class="myButton" onclick="selectDiff(this)">Easy</button>
+    <button class="myButton" onclick="selectDiff(this)">Hard</button>
+    <button class="myButton" onclick="selectDiff(this)">Pro</button>
+    <button class="myButton" onclick="selectDiff(this)">Insane</button>
+
+    <table border="1" cellpadding="10">
+        <tbody class="board"></tbody>
+    </table>
+
+    <script src="js/main.js"></script>
+    <script src="js/util.js"></script>
+</body>
+
+</html>
